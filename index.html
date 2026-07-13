@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>abhinav mishra</title>
+        <style>
+            h1{
+                text-align: center;
+                color: #00ffa689;
+            }
+            button{
+                color: #0250f8b7;
+                background-color: aqua;
+                padding: 10px 3px;
+                border: none;
+                border-radius: 200px;
+                font-size: 11px;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+            body{
+                text-align: center;
+                background-color: rgb(0, 0, 0);
+            }
+            button:hover{
+                transform: scale(1.1);
+            }
+            input{
+                padding: 10px;
+                border-radius: 20px;
+                font-size: 12px;
+            }
+            img{
+                width:200px;
+                height:200px;
+                border-radius: 50%;
+            }
+            img:hover{
+                transform: scale(1.1);
+                transition: 1s;
+            }
+            p{
+                color: rgb(211, 247, 4);
+                font-size: 20px;
+            }
+            #Proud{
+             color: #ff0000;
+             font-size: 20px;  
+            }
+
+        </style>
+    </head>
+    <body>
+        <hr>
+            <h1>WASSUP MOTHERFUCKER??</h1>
+                <img src="bradpitt.html.jfif" alt="raju" height="200" width="300">
+                <p>NOBODY'S BELIEVING IN YOU. YOU ARE WEAK, BROKEN AND POOR. BUT EVERYTHING'S NOT PERMANENT. IT'S ALL TEMPORARY. JUST WAKE UP, ROAR AND JUMP FROM SKIES.</p>
+                <p id="Proud">(FUCK EVERYONE, MISHRA IS PROUD OF YOU)</p>
+    <input id="username" type="text" placeholder="Wanna write your name?">
+    <a href="mishra.html">
+    </a>
+    <hr>
+    <audio id="clickSound">
+    <source src="click.wav.wav" type="audio/wav">
+</audio>
+
+   <button onclick="goNext()">
+    Press It
+   </button>
+    <script>
+        function goNext() {
+
+    let sound = document.getElementById("clickSound");
+
+    sound.currentTime = 0;
+    sound.play();
+
+    setTimeout(function () {
+        window.location.href = "mishra.html";
+    }, 300);
+
+}
+    </script>
+    </body>
+</html>

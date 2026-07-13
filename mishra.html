@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Second page built by me</title>
+        <style>
+          h1{
+            background-color: rgb(0, 0, 0);
+            font-size: 40px;
+            color: rgb(255, 255, 255);
+            text-align: center;
+          }
+          body{
+            text-align: center;
+            background-color: rgb(0, 0, 0);
+          }
+          button{
+            color: rgb(255, 0, 0);
+            background-color: rgb(17, 0, 254);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 200px;
+            font-size: 12px;
+            cursor: pointer;
+            transition: 0.2s;
+          }
+          button:hover{
+            transform: scale(1.2);
+          }
+          img{
+            width:200px;
+            height:200px;
+            border-radius: 100%;
+          }
+          p{
+            background-color: rgb(214, 230, 0);
+            font-size: 20px;
+          }
+        </style>
+    </head>
+<body>
+    <hr>
+    <h1>KRATOS HOLIC</h1>
+    <img src="Kratos.jfif" height="200" width="300">
+    <p id="Kratos">CONQUERING EVERY FEATS OF BIENG A TEENAGER</p>
+    <button onclick="goBack()">
+      BACK
+    </button>
+    <button onclick="goNext()">
+      ZEUS
+    </button>
+    <hr>
+    <audio id="clickSound">
+    <source src="click.wav.wav" type="audio/wav">
+</audio>
+<audio id="bgMusic" loop>
+    <source src="ummm.mp3" type="audio/mp3">
+</audio>
+    <script>
+      function goBack(){
+        window.location.href = "index.html";
+      }
+      function goNext(){
+        window.location.href = "ZEUS.html"
+      }
+      window.onload = function () {
+    let music = document.getElementById("bgMusic");
+    music.play().catch(function(error) {
+        console.log(error);
+    });
+}
+    </script>
+</body>
+</html>
