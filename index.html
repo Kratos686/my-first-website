@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device=width", initial-scale="1.0">
         <title>abhinav mishra</title>
         <style>
             h1{
                 text-align: center;
                 color: #00ffa689;
+                font-size:clamp(28px, 6vw, 40px);
             }
             button{
-                color: #0250f8b7;
-                background-color: aqua;
-                padding: 10px 3px;
+                color:#0250f8b7;
+                background-color:aqua;
+                max-width:250px;
+                padding:15px;
+                font-size:18px;
                 border: none;
-                border-radius: 200px;
-                font-size: 11px;
+                border-radius:200px;
+                font-size:18px;
                 cursor: pointer;
                 transition: 0.3s;
             }
@@ -30,8 +34,10 @@
                 font-size: 12px;
             }
             img{
-                width:200px;
-                height:200px;
+                width:50%px;
+                max-width: 200px;
+                height:auto;
+                aspect-ratio:1/1;
                 border-radius: 50%;
             }
             img:hover{
@@ -41,12 +47,37 @@
             p{
                 color: rgb(211, 247, 4);
                 font-size: 20px;
+                font-size:clamp(16px, 4vw, 20px);
             }
             #Proud{
              color: #ff0000;
-             font-size: 20px;  
+             font-size: 20px;
+             font-size:clamp(16px, 4vw, 20px);  
             }
+@media (max-width:600px){
 
+    body{
+        padding:20px;
+    }
+
+    img{
+        width:150px;
+        height:150px;
+    }
+
+    h1{
+        font-size:28px;
+    }
+
+    p{
+        font-size:16px;
+    }
+
+    button{
+        width:100%;
+    }
+
+}
         </style>
     </head>
     <body>
